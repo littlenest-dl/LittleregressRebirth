@@ -16,7 +16,7 @@ class SelectWorld:
         if os.name == "nt":  # Windows
             self.worlds_path = os.path.join(os.getenv("APPDATA"), ".minecraft", "saves")
         else:
-            self.worlds_path = os.path.join(os.path.expanduser("~"), ".minecraft", "saves")
+            self.worlds_path = os.path.join(os.path.expanduser("~"), ".var/app/com.mojang.Minecraft/.minecraft", "saves")
 
         self.general_frame = customtkinter.CTkFrame(master, fg_color='#e1d1b8')
 

@@ -10,7 +10,7 @@ class FileSystemController:
         if os.name == "nt":  # Windows
             self.worlds_path = os.path.join(os.getenv("APPDATA"), ".minecraft", "saves")
         else:
-            self.worlds_path = os.path.join(os.path.expanduser("~"), ".minecraft", "saves")
+            self.worlds_path = os.path.join(os.path.expanduser("~"), ".var/app/com.mojang.Minecraft/.minecraft", "saves")
 
         if os.name == "nt":  # Windows
             self.general_texture_path = os.path.join(os.getenv("APPDATA"), ".minecraft", "resourcepacks")

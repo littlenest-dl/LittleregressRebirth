@@ -52,6 +52,8 @@ class ExportController:
             mcmeta_path = os.path.join(project_root, 'pack.mcmeta')
             shutil.copy(mcmeta_path, datapack_folder_path)
 
+        print(datapack_folder_path)
+
         if data_find:
             data_path = os.path.join(project_root, 'data')
             data_folder = os.path.join(datapack_folder_path, 'data')

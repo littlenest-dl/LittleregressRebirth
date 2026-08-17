@@ -1,0 +1,1 @@
+execute as @s at @s run particle minecraft:falling_water ~ ~ ~ 0 0 0 1 2 force
